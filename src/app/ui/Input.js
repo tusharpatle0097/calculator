@@ -1,9 +1,10 @@
 import React from "react";
 
-const Input = ({ value, onChange, type }) => {
+const Input = ({ value, onChange, type,maxlength }) => {
   return (
     <>
       <input
+      
         type={type}
         value={value}
         onChange={onChange}

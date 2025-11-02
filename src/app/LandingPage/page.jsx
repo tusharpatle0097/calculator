@@ -141,7 +141,7 @@ const Page = () => {
       </main>
 
       <footer className="border-t border-slate-200 bg-white/70">
-        <div className="mx-auto max-w-7xl px-6 py-8 text-sm text-slate-500">
+        <div className="mx-auto max-w-7xl px-6 py-8 text-sm text-slate-500 text-center">
           © {new Date().getFullYear()} Calculator Hub. All rights reserved.
         </div>
       </footer>

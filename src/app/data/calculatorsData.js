@@ -34,4 +34,11 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/bmi-calculator",
   },
+  {
+    name: "CGPA to Percentage",
+    category: "Converter",
+    description: "Calculate CGPA to Percentage",
+    icon: "💰",
+    link: "/calculators/cgpa-to-percentage-calculator",
+  },
 ];

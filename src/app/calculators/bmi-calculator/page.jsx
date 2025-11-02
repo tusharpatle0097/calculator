@@ -11,7 +11,7 @@ const Page = () => {
   const [weight, setWeight] = useState(0);
   const [result, setResult] = useState("");
   const [showPanel, setShowPanel] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const calculateBmi = () => {
     let F = Number(feet);
