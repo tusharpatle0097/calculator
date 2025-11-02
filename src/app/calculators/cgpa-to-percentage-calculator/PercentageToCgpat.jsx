@@ -14,18 +14,25 @@ import {
 import { useState } from "react";
 
 const PercentageToCgpat = () => {
-  const [cgpa, setCgpa] = useState("");
+  const [percentage, setPercentage] = useState("");
   const [selectGrade, setSelectGrade] = useState("");
   const [error, setError] = useState("");
   const [emptyError, setEmptyError] = useState("");
   const [result, setResult] = useState("");
   const [showPanel, setShowPanel] = useState(false);
 
+  const handleChange = (e) => {
+    const newValue = e.target.value;
+    if (newValue === "" || (Number(newValue) <= 100 && !isNaN(newValue))) {
+      setPercentage(newValue);
+    }
+  };
+
   const handleCal = () => {
-    let CGPA = Number(cgpa);
+    let perc = Number(percentage);
     let Grade = Number(selectGrade);
 
-    if (!CGPA || !Grade) {
+    if (!perc || !Grade) {
       setEmptyError("Please enter valid values for all fields.");
       setTimeout(() => {
         setEmptyError("");
@@ -33,23 +40,8 @@ const PercentageToCgpat = () => {
       return;
     }
 
-    if (CGPA > Grade) {
-      setError("Your CGPA is greater than grading scale");
-      setTimeout(() => {
-        setError("");
-      }, 2000);
-      return;
-    }
-
-    if (CGPA <= Grade) {
-      if (Grade > 5.0) {
-        let tenGrade = CGPA * Grade;
-        setResult(tenGrade.toFixed(2));
-      } else {
-        let fourGrade = (CGPA / Grade) * 100;
-        setResult(fourGrade.toFixed(2));
-      }
-    }
+    let ResultsShow = (perc / 100) * Grade;
+    setResult(ResultsShow.toFixed(2));
 
     if (result >= 0) {
       setShowPanel(true);
@@ -69,13 +61,13 @@ const PercentageToCgpat = () => {
             <div className="space-y-5">
               <div>
                 <label className="mb-2 block text-sm font-medium text-slate-700">
-                  CGPA
+                  Percentage
                 </label>
                 <div className="relative">
                   <Input
-                    type="text"
-                    value={cgpa}
-                    onChange={(e) => setCgpa(e.target.value)}
+                    type="number"
+                    value={percentage}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -121,9 +113,9 @@ const PercentageToCgpat = () => {
             <div className="px-6 py-6">
               <div className="mb-5 rounded-2xl bg-slate-900 px-5 py-4 text-white shadow-sm">
                 <p className="text-xs uppercase tracking-wide text-slate-300">
-                  Percentage
+                  CGPA
                 </p>
-                <p className="mt-1 text-2xl font-semibold">{result}%</p>
+                <p className="mt-1 text-2xl font-semibold">{result}</p>
               </div>
             </div>
           </div>

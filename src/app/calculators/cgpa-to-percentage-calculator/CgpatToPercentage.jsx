@@ -21,6 +21,17 @@ const CgpatToPercentage = () => {
   const [result, setResult] = useState("");
   const [showPanel, setShowPanel] = useState(false);
 
+  const handleChange = (e) => {
+    const newValue = e.target.value;
+
+    if (
+      newValue === "" ||
+      (Number(newValue) >= 0 && Number(newValue) <= 10 && !isNaN(newValue))
+    ) {
+      setCgpa(newValue);
+    }
+  };
+
   const handleCal = () => {
     let CGPA = Number(cgpa);
     let Grade = Number(selectGrade);
@@ -72,11 +83,7 @@ const CgpatToPercentage = () => {
                   CGPA
                 </label>
                 <div className="relative">
-                  <Input
-                    type="text"
-                    value={cgpa}
-                    onChange={(e) => setCgpa(e.target.value)}
-                  />
+                  <Input type="number" value={cgpa} onChange={handleChange} />
                 </div>
               </div>
 
