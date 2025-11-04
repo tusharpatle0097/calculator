@@ -11,7 +11,7 @@ const Range = ({ onChange, value, min, max, step }) => {
         min={min}
         max={max}
         step={step}
-        className="w-full accent-slate-900"
+        className="w-full accent-slate-900 cursor-pointer"
       />
     </>
   );

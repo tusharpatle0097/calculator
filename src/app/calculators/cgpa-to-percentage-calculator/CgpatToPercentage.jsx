@@ -53,12 +53,15 @@ const CgpatToPercentage = () => {
     }
 
     if (CGPA <= Grade) {
-      if (Grade > 5.0) {
-        let tenGrade = CGPA * Grade;
-        setResult(tenGrade.toFixed(2));
-      } else {
-        let fourGrade = (CGPA / Grade) * 100;
-        setResult(fourGrade.toFixed(2));
+      if (Grade === 10.0) {
+        let percentage = CGPA * 9.5;
+        setResult(percentage.toFixed(2));
+      } else if (Grade === 5.0) {
+        let percentage = (CGPA / Grade) * 100;
+        setResult(percentage.toFixed(2));
+      } else if (Grade === 4.0) {
+        let percentage = (CGPA / Grade) * 100;
+        setResult(percentage.toFixed(2));
       }
     }
 
@@ -83,7 +86,12 @@ const CgpatToPercentage = () => {
                   CGPA
                 </label>
                 <div className="relative">
-                  <Input type="number" value={cgpa} onChange={handleChange} />
+                  <Input
+                    type="number"
+                    value={cgpa}
+                    onChange={handleChange}
+                    placeholder="enter cgpa"
+                  />
                 </div>
               </div>
 

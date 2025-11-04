@@ -28,6 +28,21 @@ export const RAW_CALCS = [
     link: "/calculators/rd-calculator",
   },
   {
+    name: "PPF Calculator",
+    category: "Financial Calculators",
+    description: "Calculate PPF.",
+    icon: "💰",
+    link: "/calculators/ppf-calculator",
+  },
+  {
+    name: "SIP and Lumpsum Calculator",
+    category: "Financial Calculators",
+    description: "Calculate SIP and Lumpsum.",
+    icon: "💰",
+    link: "/calculators/sip-and-Lumpsum-calculator",
+  },
+
+  {
     name: "BMI",
     category: "Health Calculators",
     description: "Calculate BMI.",

@@ -68,6 +68,7 @@ const PercentageToCgpat = () => {
                     type="number"
                     value={percentage}
                     onChange={handleChange}
+                    placeholder="enter percentage"
                   />
                 </div>
               </div>

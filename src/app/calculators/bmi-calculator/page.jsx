@@ -8,7 +8,7 @@ import { useState } from "react";
 const Page = () => {
   const [feet, setFeet] = useState("");
   const [inch, setInch] = useState("");
-  const [weight, setWeight] = useState(0);
+  const [weight, setWeight] = useState('');
   const [result, setResult] = useState("");
   const [showPanel, setShowPanel] = useState(false);
   const [error, setError] = useState("");
@@ -70,6 +70,7 @@ const Page = () => {
                       onChange={(e) => setWeight(e.target.value)}
                       value={weight}
                       type="number"
+                      placeholder='enter your weight'
                     />
                     <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-slate-400 text-xs">
                       kg
