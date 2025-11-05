@@ -1,5 +1,12 @@
 export const RAW_CALCS = [
   {
+    name: "Calculator",
+    category: "Financial Calculators",
+    description: "Simple Calculator",
+    icon: "💰",
+    link: "/calculators/calculator",
+  },
+  {
     name: "EMI Calculator",
     category: "Financial Calculators",
     description: "Calculate your Equated Monthly Installment for loans.",
@@ -56,7 +63,6 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/cgpa-to-percentage-calculator",
   },
-  ,
   {
     name: "Length Converter",
     category: "Converter",
