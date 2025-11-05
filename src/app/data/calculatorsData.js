@@ -56,4 +56,12 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/cgpa-to-percentage-calculator",
   },
+  ,
+  {
+    name: "Length Converter",
+    category: "Converter",
+    description: "Converter Length",
+    icon: "💰",
+    link: "/converters/length-converter",
+  },
 ];
