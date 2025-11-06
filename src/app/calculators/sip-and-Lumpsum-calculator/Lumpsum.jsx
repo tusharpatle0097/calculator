@@ -57,7 +57,7 @@ const Lumpsum = () => {
           <div className="rounded-2xl border border-slate-200 bg-white shadow-sm">
             <div className="border-b border-slate-200 px-6 py-4">
               <h2 className="text-base font-medium text-slate-800">
-                SIP Details
+                Lumpsum Details
               </h2>
             </div>
             <div className="px-6 py-6">
