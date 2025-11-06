@@ -48,6 +48,19 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/sip-and-Lumpsum-calculator",
   },
+  {
+    name: "Gratuity Calculator",
+    category: "Financial Calculators",
+    description: "Calculate Gratuity Calculator.",
+    icon: "💰",
+    link: "/calculators/gratuity-calculator",
+  }, {
+    name: "Simple Interest Calculator",
+    category: "Financial Calculators",
+    description: "Calculate Interest Rate",
+    icon: "💰",
+    link: "/calculators/simple-interest-calculator",
+  },
 
   {
     name: "BMI",
