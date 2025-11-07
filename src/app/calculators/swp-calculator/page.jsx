@@ -11,18 +11,18 @@ const Page = () => {
   const [ReturnRate, setReturnRate] = useState(12);
   const [TimePeriod, setTimePeriod] = useState(5);
   const [result, setResult] = useState("");
-  const [error, setError] = useState();
+  const [error, setError] = useState("");
 
   const Calculate = () => {
-    let P = InvestmentAmount.toString();
-    let W = MonthlyWithdrawalAmount.toString();
-    let RR = ReturnRate.toString();
+    let P = Number(InvestmentAmount);
+    let W = Number(MonthlyWithdrawalAmount);
+    let RR = Number(ReturnRate);
     let RPP = RR / 100;
     let i = RPP / 12;
-    let TP = TimePeriod.toString();
+    let TP = Number(TimePeriod);
     let n = TP * 12;
 
-    if (!P || !W || !i || !n || P<=0) {
+    if (!P || !W || !i || !n || P <= 0) {
       setError("Please enter valid values for all fields.");
       setTimeout(() => {
         setError("");
@@ -59,11 +59,9 @@ const Page = () => {
       <div className="mx-auto w-full max-w-5xl">
         <div className="mb-8">
           <h1 className="text-3xl font-semibold tracking-tight text-slate-900">
-            SWP Calculator 
+            SWP Calculator
           </h1>
-          <p className="mt-2 text-sm text-slate-500">
-            Calculate SWP
-          </p>
+          <p className="mt-2 text-sm text-slate-500">Enter your SWP details.</p>
         </div>
 
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
@@ -206,7 +204,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className={`lg:col-span-2 ${!result && 'hidden'}`}>
+          <div className={`lg:col-span-2 ${!result && "hidden"}`}>
             <div className="rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="border-b border-slate-200 px-6 py-4">
                 <h2 className="text-base font-medium text-slate-800">
