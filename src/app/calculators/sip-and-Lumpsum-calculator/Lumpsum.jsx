@@ -212,10 +212,6 @@ const Lumpsum = () => {
           );
         })}
       </div>
-
-      <div className="mt-10 text-center text-xs text-slate-400">
-        © Your Company
-      </div>
     </div>
   );
 };

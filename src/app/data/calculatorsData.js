@@ -48,7 +48,21 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/sip-and-Lumpsum-calculator",
   },
-   {
+  {
+    name: "GST Calculator",
+    category: "Financial Calculators",
+    description: "Calculate GST",
+    icon: "💰",
+    link: "/calculators/gst-calculator",
+  },
+  {
+    name: "SWP Calculator",
+    category: "Financial Calculators",
+    description: "SWP (Systematic Withdrawal Plan) Calculator",
+    icon: "💰",
+    link: "/calculators/swp-calculator",
+  },
+  {
     name: "Mutual Fund Returns Calculator",
     category: "Financial Calculators",
     description: "Calculate Mutual Fund Returns Calculator",
@@ -61,7 +75,8 @@ export const RAW_CALCS = [
     description: "Calculate Gratuity Calculator.",
     icon: "💰",
     link: "/calculators/gratuity-calculator",
-  }, {
+  },
+  {
     name: "Simple Interest Calculator",
     category: "Financial Calculators",
     description: "Calculate Interest Rate",
