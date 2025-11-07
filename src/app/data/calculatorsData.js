@@ -48,6 +48,13 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/sip-and-Lumpsum-calculator",
   },
+   {
+    name: "Mutual Fund Returns Calculator",
+    category: "Financial Calculators",
+    description: "Calculate Mutual Fund Returns Calculator",
+    icon: "💰",
+    link: "/calculators/mutual-fund-returns-calculator",
+  },
   {
     name: "Gratuity Calculator",
     category: "Financial Calculators",

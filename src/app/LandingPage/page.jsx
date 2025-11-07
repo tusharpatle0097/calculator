@@ -50,10 +50,10 @@ const Page = () => {
         </div>
         <div className="mx-auto max-w-7xl px-6 pt-12 pb-10">
           <div className="flex flex-col gap-6 items-start">
-            <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm shadow ring-1 ring-slate-200">
+            {/* <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm shadow ring-1 ring-slate-200">
               <span>🧮</span>{" "}
-              <span className="font-medium">Calculator Hub</span>
-            </span>
+              <span className="font-medium">Calculator</span>
+            </span> */}
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
               All the calculators you need — in one place
             </h1>
