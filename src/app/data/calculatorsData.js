@@ -91,6 +91,14 @@ export const RAW_CALCS = [
     icon: "⚖️",
     link: "/calculators/bmi-calculator",
   },
+  
+  {
+    name: "Healthy Weight Calculator",
+    category: "Health Calculators",
+    description: "Calculate Healthy Weight Calculator.",
+    icon: "💪🏻",
+    link: "/calculators/healthy-weight-calculator",
+  },
   {
     name: "CGPA to Percentage",
     category: "Converter",
