@@ -103,7 +103,7 @@ export const RAW_CALCS = [
     name: "BMR Calculator",
     category: "Health Calculators",
     description: "Calculate Basal Metabolic Rate Calculator.",
-    icon: "💪🏻",
+    icon: "🔥",
     link: "/calculators/bmr-calculator",
   },
   {
