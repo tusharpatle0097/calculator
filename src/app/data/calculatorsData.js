@@ -91,13 +91,20 @@ export const RAW_CALCS = [
     icon: "⚖️",
     link: "/calculators/bmi-calculator",
   },
-  
+
   {
     name: "Healthy Weight Calculator",
     category: "Health Calculators",
     description: "Calculate Healthy Weight Calculator.",
     icon: "💪🏻",
     link: "/calculators/healthy-weight-calculator",
+  },
+  {
+    name: "BMR Calculator",
+    category: "Health Calculators",
+    description: "Calculate Basal Metabolic Rate Calculator.",
+    icon: "💪🏻",
+    link: "/calculators/bmr-calculator",
   },
   {
     name: "CGPA to Percentage",
