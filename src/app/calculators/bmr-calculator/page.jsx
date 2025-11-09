@@ -52,7 +52,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 py-12 px-4">
+    <div className="min-h-screen   py-12 px-4">
       <div className="mx-auto w-full max-w-5xl">
         {/* Header */}
         <div className="mb-8">
@@ -107,8 +107,12 @@ const Page = () => {
                   </div>
 
                   <div className="mt-3">
-                    <Range min={20} max={200} value={weight}
-                      onChange={(e) => setWeight(e.target.value)}/>
+                    <Range
+                      min={20}
+                      max={200}
+                      value={weight}
+                      onChange={(e) => setWeight(e.target.value)}
+                    />
                     <div className="mt-1 flex justify-between text-xs text-slate-400">
                       <span>20 kg</span>
                       <span>200 kg</span>
@@ -228,9 +232,6 @@ const Page = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-10 text-center text-xs text-slate-400">
-          © Your Company
-        </div>
       </div>
     </div>
   );

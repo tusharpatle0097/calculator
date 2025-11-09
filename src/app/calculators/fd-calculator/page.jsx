@@ -123,7 +123,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 py-12 px-4">
+    <div className="min-h-screen   py-12 px-4">
       <div className="mx-auto w-full max-w-5xl">
         {/* Header */}
 
@@ -385,9 +385,7 @@ const Page = () => {
           )}
         </div>
 
-        <div className="mt-10 text-center text-xs text-slate-400">
-          © Your Company
-        </div>
+      
       </div>
     </div>
   );

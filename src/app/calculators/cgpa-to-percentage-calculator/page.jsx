@@ -6,7 +6,7 @@ import PercentageToCgpat from "./PercentageToCgpat";
 
 const Page = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 py-12 px-4">
+    <div className="min-h-screen   py-12 px-4">
       <div className="mx-auto w-full max-w-5xl">
         <div className="mb-8">
           <h1 className="text-3xl font-semibold tracking-tight text-slate-900">

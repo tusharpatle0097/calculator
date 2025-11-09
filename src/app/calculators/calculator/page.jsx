@@ -50,7 +50,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 py-10 px-3 text-[0.92rem]">
+    <div className="min-h-screen   py-10 px-3 text-[0.92rem]">
       <div className="mx-auto w-full max-w-4xl">
         {/* Header */}
         <div className="mb-7">

@@ -209,7 +209,7 @@ export default CgpatToPercentage;
 //   };
 
 //   return (
-//     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 py-12 px-4">
+//     <div className="min-h-screen   py-12 px-4">
 //       <div className="mx-auto w-full max-w-5xl">
 //         {/* Header */}
 

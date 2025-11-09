@@ -8,7 +8,7 @@ import { useState } from "react";
 const Page = () => {
   const [feet, setFeet] = useState("");
   const [inch, setInch] = useState("");
-  const [weight, setWeight] = useState('');
+  const [weight, setWeight] = useState("");
   const [result, setResult] = useState("");
   const [showPanel, setShowPanel] = useState(false);
   const [error, setError] = useState("");
@@ -37,7 +37,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-100 py-12 px-4">
+    <div className="min-h-screen   py-12 px-4">
       <div className="mx-auto w-full max-w-5xl">
         {/* Header */}
         <div className="mb-8">
@@ -70,7 +70,7 @@ const Page = () => {
                       onChange={(e) => setWeight(e.target.value)}
                       value={weight}
                       type="number"
-                      placeholder='enter your weight'
+                      placeholder="enter your weight"
                     />
                     <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-slate-400 text-xs">
                       kg
@@ -182,7 +182,13 @@ const Page = () => {
                   </h2>
                 </div>
                 <div className="px-6 py-4 space-y-3">
-                  <div className="flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">
+                  <div
+                    className={`flex items-center justify-between rounded-xl border ${
+                      result <= 18.5
+                        ? "animate-slate-blink"
+                        : "border-slate-100 bg-slate-50"
+                    }  px-4 py-3`}
+                  >
                     <div>
                       <p className="text-sm font-medium text-slate-800">
                         Below 18.5
@@ -194,7 +200,13 @@ const Page = () => {
                     </span>
                   </div>
 
-                  <div className="flex items-center justify-between rounded-xl border border-green-100 bg-green-50 px-4 py-3">
+                  <div
+                    className={`flex items-center justify-between rounded-xl border ${
+                      result >= 18.5 && result <= 24.9
+                        ? "animate-green-blink"
+                        : "border-green-100 bg-green-50"
+                    }  px-4 py-3`}
+                  >
                     <div>
                       <p className="text-sm font-medium text-slate-800">
                         18.5 – 24.9
@@ -206,7 +218,13 @@ const Page = () => {
                     </span>
                   </div>
 
-                  <div className="flex items-center justify-between rounded-xl border border-amber-100 bg-amber-50 px-4 py-3">
+                  <div
+                    className={`flex items-center justify-between rounded-xl border ${
+                      result >= 25.0 && result <= 29.9
+                        ? "animate-amber-blink"
+                        : "border-amber-100 bg-amber-50"
+                    }  px-4 py-3`}
+                  >
                     <div>
                       <p className="text-sm font-medium text-slate-800">
                         25.0 – 29.9
@@ -218,7 +236,13 @@ const Page = () => {
                     </span>
                   </div>
 
-                  <div className="flex items-center justify-between rounded-xl border border-rose-100 bg-rose-50 px-4 py-3">
+                  <div
+                    className={`flex items-center justify-between rounded-xl border ${
+                      result >= 30.0
+                        ? "animate-rose-blink"
+                        : "border-rose-100 bg-rose-50"
+                    }  px-4 py-3`}
+                  >
                     <div>
                       <p className="text-sm font-medium text-slate-800">
                         30.0 and above
@@ -236,9 +260,7 @@ const Page = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-10 text-center text-xs text-slate-400">
-          © Your Company
-        </div>
+      
       </div>
     </div>
   );

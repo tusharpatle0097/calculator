@@ -120,3 +120,69 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes green-blink {
+  0%,
+  100% {
+    background-color: #f0fdf4; /* bg-green-50 */
+    border-color: #dcfce7; /* border-green-100 */
+  }
+  50% {
+    background-color: #86efac; /* bg-green-300 */
+    border-color: #4ade80; /* border-green-400 */
+  }
+}
+
+/* Arbitrary animation class */
+.animate-green-blink {
+  animation: green-blink 1s infinite;
+}
+
+/* ---------- SLATE BLINK ---------- */
+@keyframes slate-blink {
+  0%,
+  100% {
+    background-color: #f8fafc; /* bg-slate-50 */
+    border-color: #f1f5f9; /* border-slate-100 */
+  }
+  50% {
+    background-color: #cbd5e1; /* bg-slate-300 */
+    border-color: #94a3b8; /* border-slate-400 */
+  }
+}
+.animate-slate-blink {
+  animation: slate-blink 1s infinite;
+}
+
+/* ---------- AMBER BLINK ---------- */
+@keyframes amber-blink {
+  0%,
+  100% {
+    background-color: #fffbeb; /* bg-amber-50 */
+    border-color: #fef3c7; /* border-amber-100 */
+  }
+  50% {
+    background-color: #fcd34d; /* bg-amber-300 */
+    border-color: #f59e0b; /* border-amber-400 */
+  }
+}
+.animate-amber-blink {
+  animation: amber-blink 1s infinite;
+}
+
+/* ---------- ROSE BLINK ---------- */
+@keyframes rose-blink {
+  0%,
+  100% {
+    background-color: #fff1f2; /* bg-rose-50 */
+    border-color: #ffe4e6; /* border-rose-100 */
+  }
+  50% {
+    background-color: #f9a8d4; /* bg-rose-300 */
+    border-color: #fb7185; /* border-rose-400 */
+  }
+}
+.animate-rose-blink {
+  animation: rose-blink 1s infinite;
+}
+

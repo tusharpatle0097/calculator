@@ -39,14 +39,14 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-800">
+    <div className="min-h-screen  text-slate-800">
       <header className="relative overflow-hidden">
         <div
           className="absolute inset-0 -z-10 opacity-30 blur-3xl"
           aria-hidden="true"
         >
-          <div className="h-64 w-64 rounded-full bg-blue-200 absolute -top-12 -left-6" />
-          <div className="h-72 w-72 rounded-full bg-indigo-200 absolute -bottom-10 right-0" />
+          <div className="h-64 w-64 rounded-full  absolute -top-12 -left-6" />
+          <div className="h-72 w-72 rounded-full  absolute -bottom-10 right-0" />
         </div>
         <div className="mx-auto max-w-7xl px-6 pt-12 pb-10">
           <div className="flex flex-col gap-6 items-start">
