@@ -153,7 +153,7 @@ const Lumpsum = () => {
               </div>
 
               <div className="mt-6 flex items-center gap-5">
-                <SubmitButton onClick={handleSip}>Calculate SIP</SubmitButton>
+                <SubmitButton onClick={handleSip}>Calculate Lumpsum</SubmitButton>
                 <p className="text-red-600">{error}</p>
               </div>
             </div>
