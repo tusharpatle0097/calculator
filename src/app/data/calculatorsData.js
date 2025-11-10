@@ -24,7 +24,7 @@ export const RAW_CALCS = [
     name: "Fuel Cost Calculator",
     category: "Other Calculators",
     description: "Calculate your fuel cost.",
-    icon: "🎂",
+    icon: "⛽",
     link: "/calculators/fuel-cost-calculator",
   },
 

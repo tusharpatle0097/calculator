@@ -76,7 +76,7 @@ const Page = () => {
                     />
                     <div className="mt-1 flex justify-between text-xs text-slate-400">
                       <span>0</span>
-                      <span>1000 km</span>
+                      <span>10000 km</span>
                     </div>
                   </div>
                 </div>
