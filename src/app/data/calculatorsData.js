@@ -21,6 +21,15 @@ export const RAW_CALCS = [
     link: "/calculators/age-calculator",
   },
   {
+    name: "Fuel Cost Calculator",
+    category: "Other Calculators",
+    description: "Calculate your fuel cost.",
+    icon: "🎂",
+    link: "/calculators/fuel-cost-calculator",
+  },
+
+  
+  {
     name: "FD Calculator",
     category: "Financial Calculators",
     description: "Calculate FD.",
