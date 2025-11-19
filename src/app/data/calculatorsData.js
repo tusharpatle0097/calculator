@@ -92,7 +92,20 @@ export const RAW_CALCS = [
     icon: "➗",
     link: "/calculators/simple-interest-calculator",
   },
-
+   {
+    name: "Compound Interest Calculation",
+    category: "Financial Calculators",
+    description: "Calculate Compound Interest",
+    icon: "💰",
+    link: "/calculators/compound-interest-calculator",
+  },
+ {
+    name: "NPS Calculation",
+    category: "Financial Calculators",
+    description: "Calculate NPS",
+    icon: "💰",
+    link: "/calculators/nps-calculator",
+  },
   {
     name: "BMI",
     category: "Health Calculators",

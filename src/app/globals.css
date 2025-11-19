@@ -186,3 +186,6 @@
   animation: rose-blink 1s infinite;
 }
 
+body {
+  font-family: Lato, sans-serif;
+}
