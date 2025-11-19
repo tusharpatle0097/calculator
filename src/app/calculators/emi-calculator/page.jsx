@@ -109,7 +109,7 @@ const EmiCalculator = () => {
                     </label>
                     <div className="relative">
                       <span className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-1 text-slate-400">
-                        ₹
+                        
                       </span>
 
                       <Input
