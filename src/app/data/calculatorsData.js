@@ -98,6 +98,13 @@ export const RAW_CALCS = [
     icon: "💰",
     link: "/calculators/compound-interest-calculator",
   },
+   {
+    name: "HRA Calculation",
+    category: "Financial Calculators",
+    description: "Calculate HRA",
+    icon: "🏠",
+    link: "/calculators/hra-calculator",
+  },
   
   {
     name: "(CAGR) Compound Annual Growth Rate",
