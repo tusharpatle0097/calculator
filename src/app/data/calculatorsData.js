@@ -28,7 +28,6 @@ export const RAW_CALCS = [
     link: "/calculators/fuel-cost-calculator",
   },
 
-  
   {
     name: "FD Calculator",
     category: "Financial Calculators",
@@ -92,18 +91,26 @@ export const RAW_CALCS = [
     icon: "➗",
     link: "/calculators/simple-interest-calculator",
   },
-   {
+  {
     name: "Compound Interest Calculation",
     category: "Financial Calculators",
     description: "Calculate Compound Interest",
     icon: "💰",
     link: "/calculators/compound-interest-calculator",
   },
- {
+  
+  {
+    name: "(CAGR) Compound Annual Growth Rate",
+    category: "Financial Calculators",
+    description: "Calculate Compound Annual Growth Rate",
+    icon: "💹",
+    link: "/calculators/compound-annual-growth-rate-calculator",
+  },
+  {
     name: "NPS Calculation",
     category: "Financial Calculators",
     description: "Calculate NPS",
-    icon: "💰",
+    icon: "📊",
     link: "/calculators/nps-calculator",
   },
   {

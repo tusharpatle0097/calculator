@@ -20,7 +20,7 @@ export const metadata = {
   description:
     "Calculator Lab offers 18+ free online calculators to simplify financial, health, academic, and daily life calculations. Calculate EMI, SIP, FD, RD, PPF, GST, SWP, Mutual Fund Returns, Gratuity, Simple Interest, Age, BMI, BMR, Healthy Weight, Fuel Cost, CGPA to Percentage,Compound Interest Calculation, Length Conversion and more. Fast, accurate, and user-friendly calculators built with Next.js for a smooth experience.",
   keywords:
-    "online calculators, financial calculators, EMI calculator, FD calculator, RD calculator, PPF calculator, SIP calculator, Lumpsum calculator, SWP calculator, mutual fund returns calculator, gratuity calculator, GST calculator, simple interest calculator,Compound Interest Calculation, age calculator, BMI calculator, BMR calculator, healthy weight calculator, fuel cost calculator, CGPA to percentage converter,NPS Calculation, length converter, calculator tools India, free calculators online",
+    "online calculators, financial calculators, EMI calculator, FD calculator, RD calculator, PPF calculator, SIP calculator, Lumpsum calculator, SWP calculator, mutual fund returns calculator, gratuity calculator, GST calculator, simple interest calculator,Compound Interest Calculation, age calculator, BMI calculator, BMR calculator, healthy weight calculator, fuel cost calculator, CGPA to percentage converter,NPS Calculation,Compound Annual Growth Rate, length converter, calculator tools India, free calculators online",
   authors: [{ name: "Tushar Patle" }],
   openGraph: {
     title: "Calculator Lab - Free Online Financial & Health Calculators",
