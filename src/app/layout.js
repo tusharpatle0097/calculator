@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Calculator Lab - Online Financial, Health & Utility Calculators",
-   icons: {
-    icon: "/calLogo.png",
+  icons: {
+    icon: "/logo4.png",
   },
   description:
     "Calculator Lab offers 18+ free online calculators to simplify financial, health, academic, and daily life calculations. Calculate EMI, SIP, FD, RD, PPF, GST, SWP, Mutual Fund Returns, Gratuity, Simple Interest, Age, BMI, BMR, Healthy Weight, Fuel Cost, CGPA to Percentage,Compound Interest Calculation, Length Conversion and more. Fast, accurate, and user-friendly calculators built with Next.js for a smooth experience.",
